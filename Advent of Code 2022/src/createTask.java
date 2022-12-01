@@ -14,8 +14,10 @@ public class createTask {
 		String daynumber = dtf.format(localDate);
 		System.out.println(daynumber);
 		
-		
+		// create the class for the day
 		createClass(daynumber, "src/");
+		
+		// create the input file for the day 
 		createInput(daynumber, "inputs/");
 		
 		
