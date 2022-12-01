@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-import org.apache.commons.lang3.StringUtils;
 
 public class Day01 implements AoCTask {
 
@@ -14,9 +13,8 @@ public class Day01 implements AoCTask {
 			input.add(scan.nextLine());
 		}
 	}
-	
-	ArrayList<Integer> sums = new ArrayList<Integer> ();
 
+	ArrayList<Integer> sums = new ArrayList<Integer>();
 
 	@Override
 	public String task1() {
@@ -34,22 +32,25 @@ public class Day01 implements AoCTask {
 			if (sum > max)
 				max = sum;
 
-		};
+		}
+		;
 		String out = "" + max;
 		return out;
 
 	}
+
 	boolean isNumeric(String s) {
 		if (s == null || s.equals("")) {
-	return false;
-	}
-	for (int i = 0; i < s.length(); i++)
-	{
-	char c = s.charAt(i);
-	if (c < '0' || c > '9') {
-	return false;}}
-	return true;};
-
+			return false;
+		}
+		for (int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			if (c < '0' || c > '9') {
+				return false;
+			}
+		}
+		return true;
+	};
 
 	@Override
 	public String task2() {
@@ -63,6 +64,4 @@ public class Day01 implements AoCTask {
 		return "" + out;
 	}
 
-	
-	
 }

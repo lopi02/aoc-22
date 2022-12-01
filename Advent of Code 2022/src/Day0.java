@@ -13,12 +13,12 @@ public class Day0 implements AoCTask {
 
 	@Override
 	public String task1() {
-		return "";
+		return "test";
 	}
 
 	@Override
 	public String task2() {
-		return "";
+		return "test";
 	}
 
 }
