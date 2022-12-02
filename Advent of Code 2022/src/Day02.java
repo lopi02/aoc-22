@@ -1,4 +1,4 @@
-package aoc_22;
+
 import java.util.Scanner;
 
 public class Day02 implements AoCTask {
