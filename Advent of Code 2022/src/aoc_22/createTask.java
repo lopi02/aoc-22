@@ -1,3 +1,4 @@
+package aoc_22;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
@@ -78,8 +79,6 @@ public class createTask {
 		if (file.exists()) {
 		   return;
 		}
-		
-		
 		PrintStream out = new PrintStream(filename);
 		String basecode = "";
 		System.out.println(basecode);
