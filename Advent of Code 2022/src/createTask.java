@@ -43,9 +43,11 @@ public class createTask {
 		PrintStream out = new PrintStream(filename);
 		
 		String basecode = 
-				+ "import java.util.Scanner;\n"
+				  "import java.util.Scanner;\n"
 				+ "\n"
-				+ "public class Day0 implements AoCTask {\n"
+				+ "public class Day" 
+				+ daynumber 
+				+ "implements AoCTask {\n"
 				+ "	\n"
 				+ "	int n = 100; // input size\n"
 				+ "	\n"
@@ -68,7 +70,7 @@ public class createTask {
 				+ "		return \"\";\n"
 				+ "	}\n"
 				+ "\n"
-				+ "};
+				+ "}";
 		out.println(basecode);
 		out.close();
 	}
