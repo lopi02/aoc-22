@@ -1,4 +1,5 @@
 
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
@@ -42,17 +43,17 @@ public class createTask {
 		PrintStream out = new PrintStream(filename);
 		
 		String basecode = 
-				"import java.util.Scanner;\n"
+				+ "import java.util.Scanner;\n"
 				+ "\n"
-				+ "public class Day"
-				+ daynumber 
-				+ " implements AoCTask {\n"
+				+ "public class Day0 implements AoCTask {\n"
 				+ "	\n"
-				+ "	int[] input = new int[2000];\n"
+				+ "	int n = 100; // input size\n"
+				+ "	\n"
+				+ "	int[] input = new int[n];\n"
 				+ "	\n"
 				+ "	@Override\n"
 				+ "	public void readInput(Scanner scan) {\n"
-				+ "		for(int i = 0; i < 2000; i++) {\n"
+				+ "		for(int i = 0; i < n; i++) {\n"
 				+ "			input[i] = scan.nextInt();\n"
 				+ "		}\n"
 				+ "	}\n"
@@ -67,7 +68,7 @@ public class createTask {
 				+ "		return \"\";\n"
 				+ "	}\n"
 				+ "\n"
-				+ "}";
+				+ "};
 		out.println(basecode);
 		out.close();
 	}

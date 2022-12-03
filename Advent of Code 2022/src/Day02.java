@@ -1,4 +1,5 @@
 
+
 import java.util.Scanner;
 
 public class Day02 implements AoCTask {
