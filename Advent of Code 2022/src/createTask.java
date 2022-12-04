@@ -47,7 +47,7 @@ public class createTask {
 				+ "\n"
 				+ "public class Day" 
 				+ daynumber 
-				+ "implements AoCTask {\n"
+				+ " implements AoCTask {\n"
 				+ "	\n"
 				+ "	int n = 100; // input size\n"
 				+ "	\n"
